@@ -15,9 +15,9 @@ function csvToJSON(_csv) {
     let currentLine = lines[i].split(",");
     obj.city = currentLine[0];
     obj.population = currentLine[1];
-    result.push[obj];
+    result.push(obj);
   }
   return result;
 }
 const citiesArray = csvToJSON(data);
-module.exports = { citiesArray };
+module.exports = citiesArray;
