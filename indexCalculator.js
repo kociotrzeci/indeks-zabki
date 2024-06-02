@@ -1,20 +1,26 @@
 const scrapper = require("./scraper.js");
-const citiesArray = require("./cities.js");
-indexCalculator();
-
-console.log(citiesArray[0]);
-async function indexCalculator(_citiesArray, _key = "żabka") {
-  for (let i = 0; i < _citiesArray; i++) {
-    result;
+const { citiesArray, saveToCSV, getCalculationInput } = require("./cities.js");
+const fs = require("node:fs");
+//runScrapper(citiesArray);
+calculateRatio(getCalculationInput());
+async function runScrapper(_citiesArray) {
+  for (let i = 0; i < _citiesArray.length; i++) {
+    if (_citiesArray[i].zabkaCount === undefined) {
+      _citiesArray[i].zabkaCount = await scrapper(_citiesArray[i].city);
+      console.log(
+        "saving: " + _citiesArray[i].city + ": " + _citiesArray[i].zabkaCount
+      );
+      saveToCSV(_citiesArray);
+    }
   }
 }
 
-function convertToCSV(arr) {
-  const array = [Object.keys(arr[0])].concat(arr);
-
-  return array
-    .map((it) => {
-      return Object.values(it).toString();
-    })
-    .join("\n");
+function calculateRatio(_array) {
+  _array.forEach((element) => {
+    element.index =
+      Math.round((element.zabkaCount / element.population) * 100000 * 15.377) /
+      10;
+  });
+  _array.sort((a, b) => b.index - a.index);
+  saveToCSV(_array, "./cities_with_ratio.csv");
 }
