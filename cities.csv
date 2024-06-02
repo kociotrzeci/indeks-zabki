@@ -1,196 +1,196 @@
-Warszawa,1794166
-Kraków,779966
-Łódź,672185
-Wrocław,641928
-Poznań,532048
-Gdańsk,470805
-Szczecin,398255
-Bydgoszcz,344091
-Lublin,338586
-Białystok,296958
-Katowice,290553
-Gdynia,244969
-Częstochowa,217530
-Radom,209296
-Toruń,198613
-Rzeszów,197863
-Sosnowiec,197586
-Kielce,193415
-Gliwice,177049
-Olsztyn,171249
-Zabrze,170924
-Bielsko-Biała,169756
-Bytom,163255
-Zielona Góra,140892
-Rybnik,137128
-Ruda Śląska,136423
-Opole,127839
-Tychy,126871
-Gorzów Wielkopolski,122589
-Elbląg,118582
-Dąbrowa Górnicza,118285
-Płock,118268
-Wałbrzych,109971
-Włocławek,108561
-Tarnów,107498
-Chorzów,106846
-Koszalin,106235
-Kalisz,99106
-Legnica,98436
-Grudziądz,93564
-Jaworzno,90368
-Słupsk,89780
-Jastrzębie-Zdrój,88038
-Nowy Sącz,83558
-Jelenia Góra,78335
-Siedlce,77813
-Mysłowice,74559
-Konin,72539
-Piła,72527
-Piotrków Trybunalski,72250
-Lubin,71710
-Inowrocław,71674
-Ostrów Wielkopolski,71560
-Suwałki,69639
-Stargard,67579
-Gniezno,67570
-Ostrowiec Świętokrzyski,67404
-Siemianowice Śląskie,66270
-Głogów,66120
-Pabianice,63945
-Leszno,62854
-Żory,62844
-Zamość,62785
-Pruszków,62623
-Łomża,62573
-Ełk,61903
-Tarnowskie Góry,61756
-Tomaszów Mazowiecki,61338
-Chełm,61135
-Mielec,60075
-Kędzierzyn-Koźle,60021
-Przemyśl,59779
-Stalowa Wola,59623
-Tczew,59430
-Biała Podlaska,56942
-Bełchatów,56419
-Świdnica,56222
-Będzin,56008
-Zgierz,55673
-Piekary Śląskie,54702
-Racibórz,54259
-Legionowo,53529
-Ostrołęka,51656
-Rumia,49536
-Świętochłowice,49108
-Wejherowo,49099
-Zawiercie,48703
-Piaseczno,48670
-Skierniewice,47655
-Starachowice,47638
-Wodzisław Śląski,47576
-Starogard Gdański,47272
-Puławy,46965
-Tarnobrzeg,46360
-Kołobrzeg,46198
-Krosno,45948
-Radomsko,45353
-Dębica,45189
-Otwock,44317
-Skarżysko-Kamienna,44260
-Ciechanów,43883
-Nysa,43356
-Kutno,43332
-Sieradz,41390
-Zduńska Wola,41288
-Mikołów,41003
-Świnoujście,40948
-Mińsk Mazowiecki,40916
-Szczecinek,39827
-Chojnice,39647
-Żyrardów,39550
-Świdnik,38763
-Ząbki,38546
-Bolesławiec,38486
-Kwidzyn,38329
-Nowa Sól,38191
-Malbork,38101
-Knurów,37801
-Oświęcim,37569
-Jarosław,37073
-Żary,37052
-Sanok,36999
-Oleśnica,36979
-Wołomin,36848
-Marki,36816
-Chrzanów,36118
-Sochaczew,35891
-Czechowice-Dziedzice,35839
-Sopot,35286
-Brzeg,35226
-Lębork,35101
-Olkusz,34757
-Jasło,34542
-Cieszyn,33981
-Kraśnik,33917
-Nowy Targ,33257
-Iława,33206
-Oława,33087
-Dzierżoniów,32869
-Ostróda,32714
-Grodzisk Mazowiecki,32452
-Police,32243
-Luboń,32015
-Pruszcz Gdański,31578
-Myszków,31261
-Mława,31129
-Czeladź,31039
-Września,31000
-Żywiec,30733
-Augustów,29946
-Swarzędz,29862
-Zgorzelec,29810
-Bochnia,29554
-Bielawa,29523
-Łuków,29441
-Śrem,29176
-Giżycko,28964
-Brodnica,28701
-Krotoszyn,28701
-Nowy Dwór Mazowiecki,28691
-Łowicz,27896
-Czerwionka-Leszczyny,27888
-Wyszków,26980
-Gorlice,26973
-Zakopane,26846
-Kętrzyn,26788
-Reda,26707
-Jarocin,26453
-Turek,26441
-Kłodzko,26421
-Biłgoraj,26114
-Pszczyna,25702
-Wągrowiec,25607
-Świecie,25486
-Żagań,25265
-Kobyłka,25149
-Bielsk Podlaski,25044
-Wałcz,24949
-Skawina,24366
-Wieliczka,24215
-Białogard,23950
-Kościerzyna,23778
-Kościan,23716
-Środa Wielkopolska,23672
-Lubliniec,23551
-Kluczbork,23254
-Sandomierz,22997
-Bartoszyce,22984
-Szczytno,22813
-Świebodzice,22642
-Piastów,22559
-Jawor,22462
-Polkowice,22435
+Warszawa,1794166,669
+Kraków,779966,416
+Łódź,672185,383
+Wrocław,641928,414
+Poznań,532048,408
+Gdańsk,470805,306
+Szczecin,398255,164
+Bydgoszcz,344091,89
+Lublin,338586,241
+Białystok,296958,87
+Katowice,290553,127
+Gdynia,244969,141
+Częstochowa,217530,58
+Radom,209296,55
+Toruń,198613,78
+Rzeszów,197863,67
+Sosnowiec,197586,37
+Kielce,193415,112
+Gliwice,177049,88
+Olsztyn,171249,57
+Zabrze,170924,47
+Bielsko-Biała,169756,31
+Bytom,163255,37
+Zielona Góra,140892,60
+Rybnik,137128,41
+Ruda Śląska,136423,41
+Opole,127839,83
+Tychy,126871,40
+Gorzów Wielkopolski,122589,36
+Elbląg,118582,27
+Dąbrowa Górnicza,118285,43
+Płock,118268,26
+Wałbrzych,109971,23
+Włocławek,108561,14
+Tarnów,107498,20
+Chorzów,106846,33
+Koszalin,106235,31
+Kalisz,99106,6
+Legnica,98436,33
+Grudziądz,93564,16
+Jaworzno,90368,10
+Słupsk,89780,41
+Jastrzębie-Zdrój,88038,12
+Nowy Sącz,83558,33
+Jelenia Góra,78335,12
+Siedlce,77813,27
+Mysłowice,74559,12
+Konin,72539,15
+Piła,72527,10
+Piotrków Trybunalski,72250,14
+Lubin,71710,14
+Inowrocław,71674,19
+Ostrów Wielkopolski,71560,19
+Suwałki,69639,5
+Stargard,67579,32
+Gniezno,67570,11
+Ostrowiec Świętokrzyski,67404,25
+Siemianowice Śląskie,66270,13
+Głogów,66120,20
+Pabianice,63945,16
+Leszno,62854,31
+Żory,62844,15
+Zamość,62785,27
+Pruszków,62623,41
+Łomża,62573,5
+Ełk,61903,12
+Tarnowskie Góry,61756,26
+Tomaszów Mazowiecki,61338,5
+Chełm,61135,24
+Mielec,60075,12
+Kędzierzyn-Koźle,60021,9
+Przemyśl,59779,14
+Stalowa Wola,59623,1
+Tczew,59430,29
+Biała Podlaska,56942,10
+Bełchatów,56419,10
+Świdnica,56222,33
+Będzin,56008,33
+Zgierz,55673,13
+Piekary Śląskie,54702,7
+Racibórz,54259,18
+Legionowo,53529,22
+Ostrołęka,51656,1
+Rumia,49536,30
+Świętochłowice,49108,8
+Wejherowo,49099,80
+Zawiercie,48703,18
+Piaseczno,48670,54
+Skierniewice,47655,7
+Starachowice,47638,12
+Wodzisław Śląski,47576,35
+Starogard Gdański,47272,16
+Puławy,46965,14
+Tarnobrzeg,46360,10
+Kołobrzeg,46198,36
+Krosno,45948,39
+Radomsko,45353,13
+Dębica,45189,9
+Otwock,44317,12
+Skarżysko-Kamienna,44260,14
+Ciechanów,43883,7
+Nysa,43356,3
+Kutno,43332,8
+Sieradz,41390,14
+Zduńska Wola,41288,4
+Mikołów,41003,17
+Świnoujście,40948,17
+Mińsk Mazowiecki,40916,9
+Szczecinek,39827,5
+Chojnice,39647,22
+Żyrardów,39550,2
+Świdnik,38763,7
+Ząbki,38546,23
+Bolesławiec,38486,8
+Kwidzyn,38329,6
+Nowa Sól,38191,18
+Malbork,38101,19
+Knurów,37801,12
+Oświęcim,37569,18
+Jarosław,37073,11
+Żary,37052,22
+Sanok,36999,6
+Oleśnica,36979,9
+Wołomin,36848,66
+Marki,36816,13
+Chrzanów,36118,33
+Sochaczew,35891,18
+Czechowice-Dziedzice,35839,12
+Sopot,35286,23
+Brzeg,35226,21
+Lębork,35101,29
+Olkusz,34757,10
+Jasło,34542,6
+Cieszyn,33981,28
+Kraśnik,33917,10
+Nowy Targ,33257,11
+Iława,33206,10
+Oława,33087,15
+Dzierżoniów,32869,10
+Ostróda,32714,9
+Grodzisk Mazowiecki,32452,24
+Police,32243,18
+Luboń,32015,14
+Pruszcz Gdański,31578,24
+Myszków,31261,12
+Mława,31129,4
+Czeladź,31039,6
+Września,31000,11
+Żywiec,30733,31
+Augustów,29946,4
+Swarzędz,29862,29
+Zgorzelec,29810,15
+Bochnia,29554,2
+Bielawa,29523,7
+Łuków,29441,3
+Śrem,29176,4
+Giżycko,28964,5
+Brodnica,28701,11
+Krotoszyn,28701,3
+Nowy Dwór Mazowiecki,28691,8
+Łowicz,27896,5
+Czerwionka-Leszczyny,27888,7
+Wyszków,26980,4
+Gorlice,26973,6
+Zakopane,26846,21
+Kętrzyn,26788,4
+Reda,26707,14
+Jarocin,26453,5
+Turek,26441,3
+Kłodzko,26421,39
+Biłgoraj,26114,7
+Pszczyna,25702,16
+Wągrowiec,25607,3
+Świecie,25486,2
+Żagań,25265,6
+Kobyłka,25149,10
+Bielsk Podlaski,25044,3
+Wałcz,24949,3
+Skawina,24366,8
+Wieliczka,24215,15
+Białogard,23950,9
+Kościerzyna,23778,10
+Kościan,23716,7
+Środa Wielkopolska,23672,11
+Lubliniec,23551,8
+Kluczbork,23254,7
+Sandomierz,22997,4
+Bartoszyce,22984,3
+Szczytno,22813,5
+Świebodzice,22642,5
+Piastów,22559,56
+Jawor,22462,4
+Polkowice,22435,13
 Ostrów Mazowiecka,22216
 Łaziska Górne,22130
 Goleniów,21979
@@ -310,15 +310,15 @@ Skoczów,14116
 Niepołomice,14022
 Ostrzeszów,13964
 Głowno,13961
-Kępno,13889
-Łęczyca,13786
-Pszów,13734
-Lubsko,13733
-Wschowa,13717
-Brwinów,13710
-Dębno,13626
-Żnin,13623
-Barlinek,13611
+Kępno,13889,8
+Łęczyca,13786,2
+Pszów,13734,1
+Lubsko,13733,2
+Wschowa,13717,1
+Brwinów,13710,4
+Dębno,13626,2
+Żnin,13623,3
+Barlinek,13611,4
 Gołdap,13600
 Leżajsk,13585
 Darłowo,13574
@@ -393,3 +393,24 @@ Kolno,10143
 Łobez,10048
 Dobre Miasto,10010
 Sulęcin,10005
+,undefined
+,undefined
+,undefined
+,undefined
+,undefined
+,undefined
+,undefined
+,undefined
+,undefined
+,undefined
+,undefined
+,undefined
+,undefined
+,undefined
+,undefined
+,undefined
+,undefined
+,undefined
+,undefined
+,undefined
+,undefined

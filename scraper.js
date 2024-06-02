@@ -35,13 +35,13 @@ async function scrapper(_city) {
       );
     } catch (error) {
       console.log("zakonczono");
-      return (
-        (
-          await page.$$(
-            "#sidebar_content > div.search_results_entry.mx-n3 > ul > li"
-          )
-        ).length - 1
-      );
+      let value = (
+        await page.$$(
+          "#sidebar_content > div.search_results_entry.mx-n3 > ul > li"
+        )
+      ).length;
+      await browser.close;
+      return value;
     }
     console.log(
       (

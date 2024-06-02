@@ -1,11 +1,13 @@
 const scrapper = require("./scraper.js");
-const citiesArray = require("./cities.js");
-indexCalculator();
+const { citiesArray, saveToCSV } = require("./cities.js");
+indexCalculator(citiesArray);
+saveToCSV(citiesArray);
 
-console.log(citiesArray[0]);
 async function indexCalculator(_citiesArray, _key = "żabka") {
-  for (let i = 0; i < _citiesArray; i++) {
-    result;
+  for (let i = 0; i < 216; i++) {
+    if (_citiesArray[i].zabkaCount === undefined)
+      _citiesArray[i].zabkaCount = await scrapper(_citiesArray[i].city);
+    saveToCSV(_citiesArray);
   }
 }
 
