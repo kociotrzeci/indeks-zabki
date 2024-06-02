@@ -17,28 +17,36 @@ function csvToJSON(_csv) {
     obj.city = currentLine[0];
     obj.population = currentLine[1];
     if (currentLine[2]) obj.zabkaCount = currentLine[2];
+    if (currentLine[3]) obj.index = currentLine[3];
     result.push(obj);
   }
   return result;
 }
-
-function saveToCSV(_content) {
+function saveToCSV(_array, dir = "./cities.csv") {
   let string = "";
-  for (let i = 0; i < _content.length; i++) {
-    let newLine = _content[i].city + "," + _content[i].population;
-    if (_content[i].zabkaCount) {
-      newLine = newLine + "," + _content[i].zabkaCount;
-    }
-    newLine = newLine + "\r\n";
-    string = string + newLine;
-  }
-
+  _array.forEach((element) => {
+    let line = "" + element.city + "," + element.population;
+    if (element.zabkaCount) line = line + "," + element.zabkaCount;
+    if (element.index) line = line + "," + element.index;
+    line = line + "\r\n";
+    string = string + line;
+  });
   try {
-    fs.writeFileSync("./cities.csv", string, "utf-8");
-    //console.log(data);
+    fs.writeFileSync(dir, string, "utf-8");
   } catch (error) {
     console.log(error);
   }
 }
 
-module.exports = { citiesArray, saveToCSV };
+function getCalculationInput() {
+  let data;
+  try {
+    data = fs.readFileSync("./cities_with_zabkas.csv", "utf-8");
+    //console.log(data);
+  } catch (error) {
+    console.log(error);
+  }
+  return csvToJSON(data);
+}
+const citiesArray = csvToJSON(data);
+module.exports = { citiesArray, saveToCSV, getCalculationInput };
