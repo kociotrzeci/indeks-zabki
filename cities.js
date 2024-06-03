@@ -7,7 +7,6 @@ try {
   console.log(error);
 }
 
-const citiesArray = csvToJSON(data);
 function csvToJSON(_csv) {
   let lines = _csv.split("\r\n");
   let result = [];
