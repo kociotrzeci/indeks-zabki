@@ -35,6 +35,10 @@ body header {
   padding: 10px 0;
   text-align: center;
 }
+body .content {
+  display: flex;
+  flex-direction: row;
+}
 body table {
   align-self: center;
   width: 100%;
@@ -62,7 +66,7 @@ body table #silver {
 }
 body table #bronze {
   background-color: #c5997e;
-}`, "",{"version":3,"sources":["webpack://./src/styles.scss"],"names":[],"mappings":"AAAA;EACE,8BAAA;EACA,SAAA;EACA,UAAA;EACA,yBAAA;EACA,aAAA;EACA,sBAAA;AACF;AAAE;EACE,sBAAA;EACA,YAAA;EACA,eAAA;EACA,kBAAA;AAEJ;AAAE;EACE,kBAAA;EACA,WAAA;EACA,iBAAA;EACA,cAAA;EACA,yBAAA;AAEJ;AADI;;EAEE,aAAA;EACA,sBAAA;AAGN;AADI;EACE,yBAAA;EACA,YAAA;AAGN;AADI;EACE,yBAAA;AAGN;AAAI;EACE,yBAAA;AAEN;AAAI;EACE,yBAAA;AAEN;AAAI;EACE,yBAAA;AAEN","sourcesContent":["body {\r\n  font-family: Arial, sans-serif;\r\n  margin: 0;\r\n  padding: 0;\r\n  background-color: #f0f0f0;\r\n  display: flex;\r\n  flex-direction: column;\r\n  header {\r\n    background-color: #333;\r\n    color: white;\r\n    padding: 10px 0;\r\n    text-align: center;\r\n  }\r\n  table {\r\n    align-self: center;\r\n    width: 100%;\r\n    max-width: 1200px;\r\n    margin: 20px 0;\r\n    border-collapse: collapse;\r\n    th,\r\n    td {\r\n      padding: 10px;\r\n      border: 1px solid #ddd;\r\n    }\r\n    th {\r\n      background-color: #4caf50;\r\n      color: white;\r\n    }\r\n    tr:nth-child(odd) {\r\n      background-color: #f7f7f7;\r\n    }\r\n\r\n    #gold {\r\n      background-color: #fdff73;\r\n    }\r\n    #silver {\r\n      background-color: #d3d3d3;\r\n    }\r\n    #bronze {\r\n      background-color: #c5997e;\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/styles.scss"],"names":[],"mappings":"AAAA;EACE,8BAAA;EACA,SAAA;EACA,UAAA;EACA,yBAAA;EACA,aAAA;EACA,sBAAA;AACF;AAAE;EACE,sBAAA;EACA,YAAA;EACA,eAAA;EACA,kBAAA;AAEJ;AAAE;EACE,aAAA;EACA,mBAAA;AAEJ;AAAE;EACE,kBAAA;EACA,WAAA;EACA,iBAAA;EACA,cAAA;EACA,yBAAA;AAEJ;AADI;;EAEE,aAAA;EACA,sBAAA;AAGN;AADI;EACE,yBAAA;EACA,YAAA;AAGN;AADI;EACE,yBAAA;AAGN;AAAI;EACE,yBAAA;AAEN;AAAI;EACE,yBAAA;AAEN;AAAI;EACE,yBAAA;AAEN","sourcesContent":["body {\r\n  font-family: Arial, sans-serif;\r\n  margin: 0;\r\n  padding: 0;\r\n  background-color: #f0f0f0;\r\n  display: flex;\r\n  flex-direction: column;\r\n  header {\r\n    background-color: #333;\r\n    color: white;\r\n    padding: 10px 0;\r\n    text-align: center;\r\n  }\r\n  .content {\r\n    display: flex;\r\n    flex-direction: row;\r\n  }\r\n  table {\r\n    align-self: center;\r\n    width: 100%;\r\n    max-width: 1200px;\r\n    margin: 20px 0;\r\n    border-collapse: collapse;\r\n    th,\r\n    td {\r\n      padding: 10px;\r\n      border: 1px solid #ddd;\r\n    }\r\n    th {\r\n      background-color: #4caf50;\r\n      color: white;\r\n    }\r\n    tr:nth-child(odd) {\r\n      background-color: #f7f7f7;\r\n    }\r\n\r\n    #gold {\r\n      background-color: #fdff73;\r\n    }\r\n    #silver {\r\n      background-color: #d3d3d3;\r\n    }\r\n    #bronze {\r\n      background-color: #c5997e;\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
