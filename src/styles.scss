@@ -11,6 +11,10 @@ body {
     padding: 10px 0;
     text-align: center;
   }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
   table {
     align-self: center;
     width: 100%;
