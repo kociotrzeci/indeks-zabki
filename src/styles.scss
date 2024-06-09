@@ -1,19 +1,59 @@
+$body-background: #e8f5e9; // Soft green
+$header-background: #1b5e20; // Dark green
+$header-color: #ffffff; // White
+$content-background: #ffffff; // White
+$table-header: #0d4b10; // Medium green
+$table-border: #c8e6c9; // Light green
+$table-odd: #f1f8e9; // Very light green
+$table-even: #e8f5e9; // Slightly darker very light green
+$table-first: #388e3c; // Light green
+$table-second: #81c784; // Medium green
+$table-third: #aed581; // Dark green
+$footer-background: $header-background; // Dark green
+$footer-color: $header-color; // White
+$footer-link: #e8f5e9; // Soft green
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: $body-background;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  min-height: 100vh;
   header {
-    background-color: #333;
-    color: white;
+    background-color: $header-background;
+    color: $header-color;
     padding: 10px 0;
     text-align: center;
   }
   .content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-self: stretch;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: $content-background;
+    .body {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .left {
+        min-width: 450px;
+        width: 450px;
+        flex-grow: 1;
+      }
+      .right {
+        min-width: 500px;
+        width: 500px;
+        flex-grow: 1;
+      }
+    }
   }
   table {
     align-self: center;
@@ -24,24 +64,40 @@ body {
     th,
     td {
       padding: 10px;
-      border: 1px solid #ddd;
+      border: 1px solid $table-border;
     }
     th {
-      background-color: #4caf50;
+      background-color: $table-header;
       color: white;
     }
     tr:nth-child(odd) {
-      background-color: #f7f7f7;
+      background-color: $table-odd;
     }
 
     #gold {
-      background-color: #fdff73;
+      background-color: $table-first;
     }
     #silver {
-      background-color: #d3d3d3;
+      background-color: $table-second;
     }
     #bronze {
-      background-color: #c5997e;
+      background-color: $table-third;
+    }
+  }
+  #footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: $footer-background;
+    align-items: center;
+    justify-content: center;
+    justify-self: start;
+    color: $footer-color;
+    padding: 5px;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: $footer-link;
     }
   }
 }

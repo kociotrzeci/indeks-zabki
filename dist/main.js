@@ -25,19 +25,45 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: #e8f5e9;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  min-height: 100vh;
 }
 body header {
-  background-color: #333;
-  color: white;
+  background-color: #1b5e20;
+  color: #ffffff;
   padding: 10px 0;
   text-align: center;
 }
 body .content {
   display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-self: stretch;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+body .content .body {
+  display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+}
+body .content .body .left {
+  min-width: 450px;
+  width: 450px;
+  flex-grow: 1;
+}
+body .content .body .right {
+  min-width: 500px;
+  width: 500px;
+  flex-grow: 1;
 }
 body table {
   align-self: center;
@@ -49,24 +75,40 @@ body table {
 body table th,
 body table td {
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #c8e6c9;
 }
 body table th {
-  background-color: #4caf50;
+  background-color: #0d4b10;
   color: white;
 }
 body table tr:nth-child(odd) {
-  background-color: #f7f7f7;
+  background-color: #f1f8e9;
 }
 body table #gold {
-  background-color: #fdff73;
+  background-color: #388e3c;
 }
 body table #silver {
-  background-color: #d3d3d3;
+  background-color: #81c784;
 }
 body table #bronze {
-  background-color: #c5997e;
-}`, "",{"version":3,"sources":["webpack://./src/styles.scss"],"names":[],"mappings":"AAAA;EACE,8BAAA;EACA,SAAA;EACA,UAAA;EACA,yBAAA;EACA,aAAA;EACA,sBAAA;AACF;AAAE;EACE,sBAAA;EACA,YAAA;EACA,eAAA;EACA,kBAAA;AAEJ;AAAE;EACE,aAAA;EACA,mBAAA;AAEJ;AAAE;EACE,kBAAA;EACA,WAAA;EACA,iBAAA;EACA,cAAA;EACA,yBAAA;AAEJ;AADI;;EAEE,aAAA;EACA,sBAAA;AAGN;AADI;EACE,yBAAA;EACA,YAAA;AAGN;AADI;EACE,yBAAA;AAGN;AAAI;EACE,yBAAA;AAEN;AAAI;EACE,yBAAA;AAEN;AAAI;EACE,yBAAA;AAEN","sourcesContent":["body {\r\n  font-family: Arial, sans-serif;\r\n  margin: 0;\r\n  padding: 0;\r\n  background-color: #f0f0f0;\r\n  display: flex;\r\n  flex-direction: column;\r\n  header {\r\n    background-color: #333;\r\n    color: white;\r\n    padding: 10px 0;\r\n    text-align: center;\r\n  }\r\n  .content {\r\n    display: flex;\r\n    flex-direction: row;\r\n  }\r\n  table {\r\n    align-self: center;\r\n    width: 100%;\r\n    max-width: 1200px;\r\n    margin: 20px 0;\r\n    border-collapse: collapse;\r\n    th,\r\n    td {\r\n      padding: 10px;\r\n      border: 1px solid #ddd;\r\n    }\r\n    th {\r\n      background-color: #4caf50;\r\n      color: white;\r\n    }\r\n    tr:nth-child(odd) {\r\n      background-color: #f7f7f7;\r\n    }\r\n\r\n    #gold {\r\n      background-color: #fdff73;\r\n    }\r\n    #silver {\r\n      background-color: #d3d3d3;\r\n    }\r\n    #bronze {\r\n      background-color: #c5997e;\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+  background-color: #aed581;
+}
+body #footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  background-color: #1b5e20;
+  align-items: center;
+  justify-content: center;
+  justify-self: start;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+}
+body #footer a {
+  text-decoration: none;
+  color: #e8f5e9;
+}`, "",{"version":3,"sources":["webpack://./src/styles.scss"],"names":[],"mappings":"AAcA;EACE,8BAAA;EACA,SAAA;EACA,UAAA;EACA,yBAlBgB;EAmBhB,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,qBAAA;EACA,iBAAA;AAbF;AAcE;EACE,yBAxBgB;EAyBhB,cAxBW;EAyBX,eAAA;EACA,kBAAA;AAZJ;AAcE;EACE,aAAA;EACA,sBAAA;EACA,kBAAA;EACA,mBAAA;EACA,qBAAA;EACA,uBAAA;EACA,qBAAA;EACA,iBAAA;EACA,aAAA;EACA,yBArCiB;AAyBrB;AAaI;EACE,aAAA;EACA,mBAAA;EACA,eAAA;AAXN;AAYM;EACE,gBAAA;EACA,YAAA;EACA,YAAA;AAVR;AAYM;EACE,gBAAA;EACA,YAAA;EACA,YAAA;AAVR;AAcE;EACE,kBAAA;EACA,WAAA;EACA,iBAAA;EACA,cAAA;EACA,yBAAA;AAZJ;AAaI;;EAEE,aAAA;EACA,yBAAA;AAXN;AAaI;EACE,yBAjES;EAkET,YAAA;AAXN;AAaI;EACE,yBAnEM;AAwDZ;AAcI;EACE,yBArEQ;AAyDd;AAcI;EACE,yBAvES;AA2Df;AAcI;EACE,yBAzEQ;AA6Dd;AAeE;EACE,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,yBAzFgB;EA0FhB,mBAAA;EACA,uBAAA;EACA,mBAAA;EACA,cA5FW;EA6FX,YAAA;EACA,kBAAA;AAbJ;AAcI;EACE,qBAAA;EACA,cAtFQ;AA0Ed","sourcesContent":["$body-background: #e8f5e9; // Soft green\r\n$header-background: #1b5e20; // Dark green\r\n$header-color: #ffffff; // White\r\n$content-background: #ffffff; // White\r\n$table-header: #0d4b10; // Medium green\r\n$table-border: #c8e6c9; // Light green\r\n$table-odd: #f1f8e9; // Very light green\r\n$table-even: #e8f5e9; // Slightly darker very light green\r\n$table-first: #388e3c; // Light green\r\n$table-second: #81c784; // Medium green\r\n$table-third: #aed581; // Dark green\r\n$footer-background: $header-background; // Dark green\r\n$footer-color: $header-color; // White\r\n$footer-link: #e8f5e9; // Soft green\r\nbody {\r\n  font-family: Arial, sans-serif;\r\n  margin: 0;\r\n  padding: 0;\r\n  background-color: $body-background;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-between;\r\n  align-content: center;\r\n  min-height: 100vh;\r\n  header {\r\n    background-color: $header-background;\r\n    color: $header-color;\r\n    padding: 10px 0;\r\n    text-align: center;\r\n  }\r\n  .content {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-self: center;\r\n    align-items: center;\r\n    align-content: center;\r\n    justify-content: center;\r\n    justify-self: stretch;\r\n    max-width: 1200px;\r\n    padding: 20px;\r\n    background-color: $content-background;\r\n    .body {\r\n      display: flex;\r\n      flex-direction: row;\r\n      flex-wrap: wrap;\r\n      .left {\r\n        min-width: 450px;\r\n        width: 450px;\r\n        flex-grow: 1;\r\n      }\r\n      .right {\r\n        min-width: 500px;\r\n        width: 500px;\r\n        flex-grow: 1;\r\n      }\r\n    }\r\n  }\r\n  table {\r\n    align-self: center;\r\n    width: 100%;\r\n    max-width: 1200px;\r\n    margin: 20px 0;\r\n    border-collapse: collapse;\r\n    th,\r\n    td {\r\n      padding: 10px;\r\n      border: 1px solid $table-border;\r\n    }\r\n    th {\r\n      background-color: $table-header;\r\n      color: white;\r\n    }\r\n    tr:nth-child(odd) {\r\n      background-color: $table-odd;\r\n    }\r\n\r\n    #gold {\r\n      background-color: $table-first;\r\n    }\r\n    #silver {\r\n      background-color: $table-second;\r\n    }\r\n    #bronze {\r\n      background-color: $table-third;\r\n    }\r\n  }\r\n  #footer {\r\n    margin-top: auto;\r\n    display: flex;\r\n    flex-direction: row;\r\n    background-color: $footer-background;\r\n    align-items: center;\r\n    justify-content: center;\r\n    justify-self: start;\r\n    color: $footer-color;\r\n    padding: 5px;\r\n    text-align: center;\r\n    a {\r\n      text-decoration: none;\r\n      color: $footer-link;\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
