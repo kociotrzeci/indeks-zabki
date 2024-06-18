@@ -17,16 +17,19 @@ function csvToJSON(_csv) {
     obj.population = currentLine[1];
     if (currentLine[2]) obj.zabkaCount = currentLine[2];
     if (currentLine[3]) obj.index = currentLine[3];
+    if (currentLine[4]) obj.perCapita = currentLine[3];
     result.push(obj);
   }
   return result;
 }
 function saveToCSV(_array, dir = "./cities.csv") {
   let string = "";
+  string = string + "city,population,zabkaCount,index,perCapita\r\n";
   _array.forEach((element) => {
     let line = "" + element.city + "," + element.population;
     if (element.zabkaCount) line = line + "," + element.zabkaCount;
     if (element.index) line = line + "," + element.index;
+    if (element.perCapita) line = line + "," + element.perCapita;
     line = line + "\r\n";
     string = string + line;
   });

@@ -20,6 +20,8 @@ function calculateRatio(_array) {
     element.index =
       Math.round((element.zabkaCount / element.population) * 100000 * 15.377) /
       10;
+    element.perCapita =
+      Math.round((element.zabkaCount / element.population) * 1000000) / 100;
   });
   _array.sort((a, b) => b.index - a.index);
   saveToCSV(_array, "./cities_with_ratio.csv");
