@@ -97,18 +97,29 @@ body #footer {
   margin-top: auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   background-color: #1b5e20;
-  align-items: center;
   justify-content: center;
-  justify-self: start;
-  color: #ffffff;
-  padding: 5px;
-  text-align: center;
+  color: #afc694;
+  padding: 0.5em;
+  align-items: center;
+}
+body #footer p {
+  padding: 0em;
+  margin: 0.2em;
 }
 body #footer a {
+  color: #afc694;
   text-decoration: none;
-  color: #e8f5e9;
-}`, "",{"version":3,"sources":["webpack://./src/styles.scss"],"names":[],"mappings":"AAcA;EACE,8BAAA;EACA,SAAA;EACA,UAAA;EACA,yBAlBgB;EAmBhB,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,qBAAA;EACA,iBAAA;AAbF;AAcE;EACE,yBAxBgB;EAyBhB,cAxBW;EAyBX,eAAA;EACA,kBAAA;AAZJ;AAcE;EACE,aAAA;EACA,sBAAA;EACA,kBAAA;EACA,mBAAA;EACA,qBAAA;EACA,uBAAA;EACA,qBAAA;EACA,iBAAA;EACA,aAAA;EACA,yBArCiB;AAyBrB;AAaI;EACE,aAAA;EACA,mBAAA;EACA,eAAA;AAXN;AAYM;EACE,gBAAA;EACA,YAAA;EACA,YAAA;AAVR;AAYM;EACE,gBAAA;EACA,YAAA;EACA,YAAA;AAVR;AAcE;EACE,kBAAA;EACA,WAAA;EACA,iBAAA;EACA,cAAA;EACA,yBAAA;AAZJ;AAaI;;EAEE,aAAA;EACA,yBAAA;AAXN;AAaI;EACE,yBAjES;EAkET,YAAA;AAXN;AAaI;EACE,yBAnEM;AAwDZ;AAcI;EACE,yBArEQ;AAyDd;AAcI;EACE,yBAvES;AA2Df;AAcI;EACE,yBAzEQ;AA6Dd;AAeE;EACE,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,yBAzFgB;EA0FhB,mBAAA;EACA,uBAAA;EACA,mBAAA;EACA,cA5FW;EA6FX,YAAA;EACA,kBAAA;AAbJ;AAcI;EACE,qBAAA;EACA,cAtFQ;AA0Ed","sourcesContent":["$body-background: #e8f5e9; // Soft green\r\n$header-background: #1b5e20; // Dark green\r\n$header-color: #ffffff; // White\r\n$content-background: #ffffff; // White\r\n$table-header: #0d4b10; // Medium green\r\n$table-border: #c8e6c9; // Light green\r\n$table-odd: #f1f8e9; // Very light green\r\n$table-even: #e8f5e9; // Slightly darker very light green\r\n$table-first: #388e3c; // Light green\r\n$table-second: #81c784; // Medium green\r\n$table-third: #aed581; // Dark green\r\n$footer-background: $header-background; // Dark green\r\n$footer-color: $header-color; // White\r\n$footer-link: #e8f5e9; // Soft green\r\nbody {\r\n  font-family: Arial, sans-serif;\r\n  margin: 0;\r\n  padding: 0;\r\n  background-color: $body-background;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-between;\r\n  align-content: center;\r\n  min-height: 100vh;\r\n  header {\r\n    background-color: $header-background;\r\n    color: $header-color;\r\n    padding: 10px 0;\r\n    text-align: center;\r\n  }\r\n  .content {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-self: center;\r\n    align-items: center;\r\n    align-content: center;\r\n    justify-content: center;\r\n    justify-self: stretch;\r\n    max-width: 1200px;\r\n    padding: 20px;\r\n    background-color: $content-background;\r\n    .body {\r\n      display: flex;\r\n      flex-direction: row;\r\n      flex-wrap: wrap;\r\n      .left {\r\n        min-width: 450px;\r\n        width: 450px;\r\n        flex-grow: 1;\r\n      }\r\n      .right {\r\n        min-width: 500px;\r\n        width: 500px;\r\n        flex-grow: 1;\r\n      }\r\n    }\r\n  }\r\n  table {\r\n    align-self: center;\r\n    width: 100%;\r\n    max-width: 1200px;\r\n    margin: 20px 0;\r\n    border-collapse: collapse;\r\n    th,\r\n    td {\r\n      padding: 10px;\r\n      border: 1px solid $table-border;\r\n    }\r\n    th {\r\n      background-color: $table-header;\r\n      color: white;\r\n    }\r\n    tr:nth-child(odd) {\r\n      background-color: $table-odd;\r\n    }\r\n\r\n    #gold {\r\n      background-color: $table-first;\r\n    }\r\n    #silver {\r\n      background-color: $table-second;\r\n    }\r\n    #bronze {\r\n      background-color: $table-third;\r\n    }\r\n  }\r\n  #footer {\r\n    margin-top: auto;\r\n    display: flex;\r\n    flex-direction: row;\r\n    background-color: $footer-background;\r\n    align-items: center;\r\n    justify-content: center;\r\n    justify-self: start;\r\n    color: $footer-color;\r\n    padding: 5px;\r\n    text-align: center;\r\n    a {\r\n      text-decoration: none;\r\n      color: $footer-link;\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+  display: flex;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+body #footer a img {
+  height: 1.3em;
+  filter: invert(92%) sepia(6%) saturate(1497%) hue-rotate(39deg) brightness(85%) contrast(86%);
+}`, "",{"version":3,"sources":["webpack://./src/styles.scss"],"names":[],"mappings":"AAcA;EACE,8BAAA;EACA,SAAA;EACA,UAAA;EACA,yBAlBgB;EAmBhB,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,qBAAA;EACA,iBAAA;AAbF;AAcE;EACE,yBAxBgB;EAyBhB,cAxBW;EAyBX,eAAA;EACA,kBAAA;AAZJ;AAcE;EACE,aAAA;EACA,sBAAA;EACA,kBAAA;EACA,mBAAA;EACA,qBAAA;EACA,uBAAA;EACA,qBAAA;EACA,iBAAA;EACA,aAAA;EACA,yBArCiB;AAyBrB;AAaI;EACE,aAAA;EACA,mBAAA;EACA,eAAA;AAXN;AAYM;EACE,gBAAA;EACA,YAAA;EACA,YAAA;AAVR;AAYM;EACE,gBAAA;EACA,YAAA;EACA,YAAA;AAVR;AAcE;EACE,kBAAA;EACA,WAAA;EACA,iBAAA;EACA,cAAA;EACA,yBAAA;AAZJ;AAaI;;EAEE,aAAA;EACA,yBAAA;AAXN;AAaI;EACE,yBAjES;EAkET,YAAA;AAXN;AAaI;EACE,yBAnEM;AAwDZ;AAcI;EACE,yBArEQ;AAyDd;AAcI;EACE,yBAvES;AA2Df;AAcI;EACE,yBAzEQ;AA6Dd;AAeE;EACE,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,yBA1FgB;EA2FhB,uBAAA;EACA,cAjFW;EAkFX,cAAA;EACA,mBAAA;AAbJ;AAcI;EACE,YAAA;EACA,aAAA;AAZN;AAcI;EACE,cAzFS;EA0FT,qBAAA;EACA,aAAA;EACA,kBAAA;EACA,qBAAA;EACA,mBAAA;AAZN;AAaM;EACE,aAAA;EACA,6FAAA;AAXR","sourcesContent":["$body-background: #e8f5e9; // Soft green\r\n$header-background: #1b5e20; // Dark green\r\n$header-color: #ffffff; // White\r\n$content-background: #ffffff; // White\r\n$table-header: #0d4b10; // Medium green\r\n$table-border: #c8e6c9; // Light green\r\n$table-odd: #f1f8e9; // Very light green\r\n$table-even: #e8f5e9; // Slightly darker very light green\r\n$table-first: #388e3c; // Light green\r\n$table-second: #81c784; // Medium green\r\n$table-third: #aed581; // Dark green\r\n$footer-background: $header-background; // Dark green\r\n$footer-color: #afc694; // White\r\n$footer-link: #d6e5d2; // Soft green\r\nbody {\r\n  font-family: Arial, sans-serif;\r\n  margin: 0;\r\n  padding: 0;\r\n  background-color: $body-background;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-between;\r\n  align-content: center;\r\n  min-height: 100vh;\r\n  header {\r\n    background-color: $header-background;\r\n    color: $header-color;\r\n    padding: 10px 0;\r\n    text-align: center;\r\n  }\r\n  .content {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-self: center;\r\n    align-items: center;\r\n    align-content: center;\r\n    justify-content: center;\r\n    justify-self: stretch;\r\n    max-width: 1200px;\r\n    padding: 20px;\r\n    background-color: $content-background;\r\n    .body {\r\n      display: flex;\r\n      flex-direction: row;\r\n      flex-wrap: wrap;\r\n      .left {\r\n        min-width: 450px;\r\n        width: 450px;\r\n        flex-grow: 1;\r\n      }\r\n      .right {\r\n        min-width: 500px;\r\n        width: 500px;\r\n        flex-grow: 1;\r\n      }\r\n    }\r\n  }\r\n  table {\r\n    align-self: center;\r\n    width: 100%;\r\n    max-width: 1200px;\r\n    margin: 20px 0;\r\n    border-collapse: collapse;\r\n    th,\r\n    td {\r\n      padding: 10px;\r\n      border: 1px solid $table-border;\r\n    }\r\n    th {\r\n      background-color: $table-header;\r\n      color: white;\r\n    }\r\n    tr:nth-child(odd) {\r\n      background-color: $table-odd;\r\n    }\r\n\r\n    #gold {\r\n      background-color: $table-first;\r\n    }\r\n    #silver {\r\n      background-color: $table-second;\r\n    }\r\n    #bronze {\r\n      background-color: $table-third;\r\n    }\r\n  }\r\n  #footer {\r\n    margin-top: auto;\r\n    display: flex;\r\n    flex-direction: row;\r\n    flex-wrap: nowrap;\r\n    background-color: $footer-background;\r\n    justify-content: center;\r\n    color: $footer-color;\r\n    padding: 0.5em;\r\n    align-items: center;\r\n    p {\r\n      padding: 0em;\r\n      margin: 0.2em;\r\n    }\r\n    a {\r\n      color: $footer-color;\r\n      text-decoration: none;\r\n      display: flex;\r\n      text-align: center;\r\n      align-content: center;\r\n      align-items: center;\r\n      img {\r\n        height: 1.3em;\r\n        filter: invert(92%) sepia(6%) saturate(1497%) hue-rotate(39deg)\r\n          brightness(85%) contrast(86%);\r\n      }\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -632,6 +643,17 @@ function fillPodium(_data, _div) {
 }
 
 
+/***/ }),
+
+/***/ "./src/github-mark.svg":
+/*!*****************************!*\
+  !*** ./src/github-mark.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "6fa18895f6e6c7772cab.svg";
+
 /***/ })
 
 /******/ 	});
@@ -685,6 +707,18 @@ function fillPodium(_data, _div) {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -699,6 +733,29 @@ function fillPodium(_data, _div) {
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
@@ -719,9 +776,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _data_cities_with_ratio_csv__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./data/cities_with_ratio.csv */ "./src/data/cities_with_ratio.csv");
 /* harmony import */ var _data_cities_with_ratio_csv__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_data_cities_with_ratio_csv__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _fillTable_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fillTable.js */ "./src/fillTable.js");
+/* harmony import */ var _github_mark_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./github-mark.svg */ "./src/github-mark.svg");
 
 
 
+
+document.getElementById("github").src = _github_mark_svg__WEBPACK_IMPORTED_MODULE_3__;
 console.log("Hello webpack");
 const tableBody = document.querySelector("tbody");
 const podiumBody = document.querySelector("div.right");
