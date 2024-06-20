@@ -1,6 +1,8 @@
 import "./styles.scss";
 import data from "./data/cities_with_ratio.csv";
 import { fillTable, fillPodium } from "./fillTable.js";
+import github from "./github-mark.svg";
+document.getElementById("github").src = github;
 console.log("Hello webpack");
 const tableBody = document.querySelector("tbody");
 const podiumBody = document.querySelector("div.right");

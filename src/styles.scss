@@ -10,8 +10,8 @@ $table-first: #388e3c; // Light green
 $table-second: #81c784; // Medium green
 $table-third: #aed581; // Dark green
 $footer-background: $header-background; // Dark green
-$footer-color: $header-color; // White
-$footer-link: #e8f5e9; // Soft green
+$footer-color: #afc694; // White
+$footer-link: #d6e5d2; // Soft green
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -88,16 +88,28 @@ body {
     margin-top: auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     background-color: $footer-background;
-    align-items: center;
     justify-content: center;
-    justify-self: start;
     color: $footer-color;
-    padding: 5px;
-    text-align: center;
+    padding: 0.5em;
+    align-items: center;
+    p {
+      padding: 0em;
+      margin: 0.2em;
+    }
     a {
+      color: $footer-color;
       text-decoration: none;
-      color: $footer-link;
+      display: flex;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+      img {
+        height: 1.3em;
+        filter: invert(92%) sepia(6%) saturate(1497%) hue-rotate(39deg)
+          brightness(85%) contrast(86%);
+      }
     }
   }
 }
