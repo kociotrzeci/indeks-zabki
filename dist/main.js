@@ -16,12 +16,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./FontsFree-Net-ergonomique-bold.ttf */ "./src/FontsFree-Net-ergonomique-bold.ttf"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `body {
+___CSS_LOADER_EXPORT___.push([module.id, `@font-face {
+  font-family: "zabka";
+  src: url(${___CSS_LOADER_URL_REPLACEMENT_0___}) format("truetype");
+}
+body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -35,8 +44,20 @@ ___CSS_LOADER_EXPORT___.push([module.id, `body {
 body header {
   background-color: #1b5e20;
   color: #ffffff;
-  padding: 10px 0;
   text-align: center;
+  flex-direction: row;
+}
+body header h1 {
+  font-size: 3rem;
+  padding: 0;
+  font-family: "zabka";
+  display: inline-block;
+}
+body header .nawias {
+  position: relative;
+  right: 1.75em;
+  top: 0.6em;
+  transform: rotate(0.25turn);
 }
 body .content {
   display: flex;
@@ -93,6 +114,27 @@ body table #silver {
 body table #bronze {
   background-color: #aed581;
 }
+body button {
+  background-color: #388e3c;
+  border-radius: 28px;
+  border: 1px solid #0d4b10;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #0d4b10;
+}
+body button:hover {
+  background-color: #81c784;
+  border-color: #388e3c;
+}
+body button:active {
+  position: relative;
+  top: 1px;
+}
 body #footer {
   margin-top: auto;
   display: flex;
@@ -107,6 +149,7 @@ body #footer {
 body #footer p {
   padding: 0em;
   margin: 0.2em;
+  margin-right: 0;
 }
 body #footer a {
   color: #afc694;
@@ -119,7 +162,7 @@ body #footer a {
 body #footer a img {
   height: 1.3em;
   filter: invert(92%) sepia(6%) saturate(1497%) hue-rotate(39deg) brightness(85%) contrast(86%);
-}`, "",{"version":3,"sources":["webpack://./src/styles.scss"],"names":[],"mappings":"AAcA;EACE,8BAAA;EACA,SAAA;EACA,UAAA;EACA,yBAlBgB;EAmBhB,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,qBAAA;EACA,iBAAA;AAbF;AAcE;EACE,yBAxBgB;EAyBhB,cAxBW;EAyBX,eAAA;EACA,kBAAA;AAZJ;AAcE;EACE,aAAA;EACA,sBAAA;EACA,kBAAA;EACA,mBAAA;EACA,qBAAA;EACA,uBAAA;EACA,qBAAA;EACA,iBAAA;EACA,aAAA;EACA,yBArCiB;AAyBrB;AAaI;EACE,aAAA;EACA,mBAAA;EACA,eAAA;AAXN;AAYM;EACE,gBAAA;EACA,YAAA;EACA,YAAA;AAVR;AAYM;EACE,gBAAA;EACA,YAAA;EACA,YAAA;AAVR;AAcE;EACE,kBAAA;EACA,WAAA;EACA,iBAAA;EACA,cAAA;EACA,yBAAA;AAZJ;AAaI;;EAEE,aAAA;EACA,yBAAA;AAXN;AAaI;EACE,yBAjES;EAkET,YAAA;AAXN;AAaI;EACE,yBAnEM;AAwDZ;AAcI;EACE,yBArEQ;AAyDd;AAcI;EACE,yBAvES;AA2Df;AAcI;EACE,yBAzEQ;AA6Dd;AAeE;EACE,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,yBA1FgB;EA2FhB,uBAAA;EACA,cAjFW;EAkFX,cAAA;EACA,mBAAA;AAbJ;AAcI;EACE,YAAA;EACA,aAAA;AAZN;AAcI;EACE,cAzFS;EA0FT,qBAAA;EACA,aAAA;EACA,kBAAA;EACA,qBAAA;EACA,mBAAA;AAZN;AAaM;EACE,aAAA;EACA,6FAAA;AAXR","sourcesContent":["$body-background: #e8f5e9; // Soft green\r\n$header-background: #1b5e20; // Dark green\r\n$header-color: #ffffff; // White\r\n$content-background: #ffffff; // White\r\n$table-header: #0d4b10; // Medium green\r\n$table-border: #c8e6c9; // Light green\r\n$table-odd: #f1f8e9; // Very light green\r\n$table-even: #e8f5e9; // Slightly darker very light green\r\n$table-first: #388e3c; // Light green\r\n$table-second: #81c784; // Medium green\r\n$table-third: #aed581; // Dark green\r\n$footer-background: $header-background; // Dark green\r\n$footer-color: #afc694; // White\r\n$footer-link: #d6e5d2; // Soft green\r\nbody {\r\n  font-family: Arial, sans-serif;\r\n  margin: 0;\r\n  padding: 0;\r\n  background-color: $body-background;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-between;\r\n  align-content: center;\r\n  min-height: 100vh;\r\n  header {\r\n    background-color: $header-background;\r\n    color: $header-color;\r\n    padding: 10px 0;\r\n    text-align: center;\r\n  }\r\n  .content {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-self: center;\r\n    align-items: center;\r\n    align-content: center;\r\n    justify-content: center;\r\n    justify-self: stretch;\r\n    max-width: 1200px;\r\n    padding: 20px;\r\n    background-color: $content-background;\r\n    .body {\r\n      display: flex;\r\n      flex-direction: row;\r\n      flex-wrap: wrap;\r\n      .left {\r\n        min-width: 450px;\r\n        width: 450px;\r\n        flex-grow: 1;\r\n      }\r\n      .right {\r\n        min-width: 500px;\r\n        width: 500px;\r\n        flex-grow: 1;\r\n      }\r\n    }\r\n  }\r\n  table {\r\n    align-self: center;\r\n    width: 100%;\r\n    max-width: 1200px;\r\n    margin: 20px 0;\r\n    border-collapse: collapse;\r\n    th,\r\n    td {\r\n      padding: 10px;\r\n      border: 1px solid $table-border;\r\n    }\r\n    th {\r\n      background-color: $table-header;\r\n      color: white;\r\n    }\r\n    tr:nth-child(odd) {\r\n      background-color: $table-odd;\r\n    }\r\n\r\n    #gold {\r\n      background-color: $table-first;\r\n    }\r\n    #silver {\r\n      background-color: $table-second;\r\n    }\r\n    #bronze {\r\n      background-color: $table-third;\r\n    }\r\n  }\r\n  #footer {\r\n    margin-top: auto;\r\n    display: flex;\r\n    flex-direction: row;\r\n    flex-wrap: nowrap;\r\n    background-color: $footer-background;\r\n    justify-content: center;\r\n    color: $footer-color;\r\n    padding: 0.5em;\r\n    align-items: center;\r\n    p {\r\n      padding: 0em;\r\n      margin: 0.2em;\r\n    }\r\n    a {\r\n      color: $footer-color;\r\n      text-decoration: none;\r\n      display: flex;\r\n      text-align: center;\r\n      align-content: center;\r\n      align-items: center;\r\n      img {\r\n        height: 1.3em;\r\n        filter: invert(92%) sepia(6%) saturate(1497%) hue-rotate(39deg)\r\n          brightness(85%) contrast(86%);\r\n      }\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/styles.scss"],"names":[],"mappings":"AAAA;EACE,oBAAA;EACA,+DAAA;AACF;AAmBA;EACE,8BAAA;EACA,SAAA;EACA,UAAA;EACA,yBArBgB;EAsBhB,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,qBAAA;EACA,iBAAA;AAjBF;AAkBE;EACE,yBA3BgB;EA4BhB,cA3BW;EA4BX,kBAAA;EACA,mBAAA;AAhBJ;AAiBI;EACE,eAAA;EACA,UAAA;EACA,oBAAA;EACA,qBAAA;AAfN;AAiBI;EACE,kBAAA;EACA,aAAA;EACA,UAAA;EACA,2BAAA;AAfN;AAkBE;EACE,aAAA;EACA,sBAAA;EACA,kBAAA;EACA,mBAAA;EACA,qBAAA;EACA,uBAAA;EACA,qBAAA;EACA,iBAAA;EACA,aAAA;EACA,yBApDiB;AAoCrB;AAiBI;EACE,aAAA;EACA,mBAAA;EACA,eAAA;AAfN;AAgBM;EACE,gBAAA;EACA,YAAA;EACA,YAAA;AAdR;AAgBM;EACE,gBAAA;EACA,YAAA;EACA,YAAA;AAdR;AAkBE;EACE,kBAAA;EACA,WAAA;EACA,iBAAA;EACA,cAAA;EACA,yBAAA;AAhBJ;AAiBI;;EAEE,aAAA;EACA,yBAAA;AAfN;AAiBI;EACE,yBAhFS;EAiFT,YAAA;AAfN;AAiBI;EACE,yBAlFM;AAmEZ;AAkBI;EACE,yBApFQ;AAoEd;AAkBI;EACE,yBAtFS;AAsEf;AAkBI;EACE,yBAxFQ;AAwEd;AAmBE;EACE,yBA9FU;EA+FV,mBAAA;EACA,yBAAA;EACA,qBAAA;EACA,eAAA;EACA,cAAA;EACA,kBAAA;EACA,eAAA;EACA,kBAAA;EACA,qBAAA;EACA,gCAAA;AAjBJ;AAmBE;EACE,yBA1GW;EA2GX,qBA5GU;AA2Fd;AAmBE;EACE,kBAAA;EACA,QAAA;AAjBJ;AAoBE;EACE,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,yBA/HgB;EAgIhB,uBAAA;EACA,cAtHW;EAuHX,cAAA;EACA,mBAAA;AAlBJ;AAmBI;EACE,YAAA;EACA,aAAA;EACA,eAAA;AAjBN;AAmBI;EACE,cA/HS;EAgIT,qBAAA;EACA,aAAA;EACA,kBAAA;EACA,qBAAA;EACA,mBAAA;AAjBN;AAkBM;EACE,aAAA;EACA,6FAAA;AAhBR","sourcesContent":["@font-face {\r\n  font-family: \"zabka\";\r\n  src: url(\"./FontsFree-Net-ergonomique-bold.ttf\") format(\"truetype\");\r\n}\r\n\r\n$body-background: #e8f5e9; // Soft green\r\n$header-background: #1b5e20; // Dark green\r\n$header-color: #ffffff; // White\r\n$content-background: #ffffff; // White\r\n$table-header: #0d4b10; // Medium green\r\n$table-border: #c8e6c9; // Light green\r\n$table-odd: #f1f8e9; // Very light green\r\n$table-even: #e8f5e9; // Slightly darker very light green\r\n$table-first: #388e3c; // Light green\r\n$table-second: #81c784; // Medium green\r\n$table-third: #aed581; // Dark green\r\n$footer-background: $header-background; // Dark green\r\n$footer-color: #afc694; // White\r\n$footer-link: #d6e5d2; // Soft green\r\n$button-background: $table-first; // Medium green\r\n$button-hover: $table-second; // Light green\r\n$button-text-shadow: $table-header; // Medium green (or adjust as needed)\r\nbody {\r\n  font-family: Arial, sans-serif;\r\n  margin: 0;\r\n  padding: 0;\r\n  background-color: $body-background;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-between;\r\n  align-content: center;\r\n  min-height: 100vh;\r\n  header {\r\n    background-color: $header-background;\r\n    color: $header-color;\r\n    text-align: center;\r\n    flex-direction: row;\r\n    h1 {\r\n      font-size: 3rem;\r\n      padding: 0;\r\n      font-family: \"zabka\";\r\n      display: inline-block;\r\n    }\r\n    .nawias {\r\n      position: relative;\r\n      right: 1.75em;\r\n      top: 0.6em;\r\n      transform: rotate(0.25turn);\r\n    }\r\n  }\r\n  .content {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-self: center;\r\n    align-items: center;\r\n    align-content: center;\r\n    justify-content: center;\r\n    justify-self: stretch;\r\n    max-width: 1200px;\r\n    padding: 20px;\r\n    background-color: $content-background;\r\n    .body {\r\n      display: flex;\r\n      flex-direction: row;\r\n      flex-wrap: wrap;\r\n      .left {\r\n        min-width: 450px;\r\n        width: 450px;\r\n        flex-grow: 1;\r\n      }\r\n      .right {\r\n        min-width: 500px;\r\n        width: 500px;\r\n        flex-grow: 1;\r\n      }\r\n    }\r\n  }\r\n  table {\r\n    align-self: center;\r\n    width: 100%;\r\n    max-width: 1200px;\r\n    margin: 20px 0;\r\n    border-collapse: collapse;\r\n    th,\r\n    td {\r\n      padding: 10px;\r\n      border: 1px solid $table-border;\r\n    }\r\n    th {\r\n      background-color: $table-header;\r\n      color: white;\r\n    }\r\n    tr:nth-child(odd) {\r\n      background-color: $table-odd;\r\n    }\r\n\r\n    #gold {\r\n      background-color: $table-first;\r\n    }\r\n    #silver {\r\n      background-color: $table-second;\r\n    }\r\n    #bronze {\r\n      background-color: $table-third;\r\n    }\r\n  }\r\n  button {\r\n    background-color: $button-background;\r\n    border-radius: 28px;\r\n    border: 1px solid $button-text-shadow;\r\n    display: inline-block;\r\n    cursor: pointer;\r\n    color: #ffffff;\r\n    font-family: Arial;\r\n    font-size: 17px;\r\n    padding: 16px 31px;\r\n    text-decoration: none;\r\n    text-shadow: 0px 1px 0px $button-text-shadow;\r\n  }\r\n  button:hover {\r\n    background-color: $button-hover;\r\n    border-color: $button-background;\r\n  }\r\n  button:active {\r\n    position: relative;\r\n    top: 1px;\r\n  }\r\n\r\n  #footer {\r\n    margin-top: auto;\r\n    display: flex;\r\n    flex-direction: row;\r\n    flex-wrap: nowrap;\r\n    background-color: $footer-background;\r\n    justify-content: center;\r\n    color: $footer-color;\r\n    padding: 0.5em;\r\n    align-items: center;\r\n    p {\r\n      padding: 0em;\r\n      margin: 0.2em;\r\n      margin-right: 0;\r\n    }\r\n    a {\r\n      color: $footer-color;\r\n      text-decoration: none;\r\n      display: flex;\r\n      text-align: center;\r\n      align-content: center;\r\n      align-items: center;\r\n      img {\r\n        height: 1.3em;\r\n        filter: invert(92%) sepia(6%) saturate(1497%) hue-rotate(39deg)\r\n          brightness(85%) contrast(86%);\r\n      }\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -217,6 +260,42 @@ module.exports = function (cssWithMappingToString) {
     }
   };
   return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+  if (!url) {
+    return url;
+  }
+  url = String(url.__esModule ? url.default : url);
+
+  // If url is already wrapped in quotes, remove them
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+  if (options.hash) {
+    url += options.hash;
+  }
+
+  // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+  return url;
 };
 
 /***/ }),
@@ -645,6 +724,17 @@ function fillPodium(_data, _div) {
 
 /***/ }),
 
+/***/ "./src/FontsFree-Net-ergonomique-bold.ttf":
+/*!************************************************!*\
+  !*** ./src/FontsFree-Net-ergonomique-bold.ttf ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "6a92847bcc35ede5ae2e.ttf";
+
+/***/ }),
+
 /***/ "./src/github-mark.svg":
 /*!*****************************!*\
   !*** ./src/github-mark.svg ***!
@@ -681,6 +771,9 @@ module.exports = __webpack_require__.p + "6fa18895f6e6c7772cab.svg";
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -756,6 +849,32 @@ module.exports = __webpack_require__.p + "6fa18895f6e6c7772cab.svg";
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
 /******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "zabka";
+  src: url("./FontsFree-Net-ergonomique-bold.ttf") format("truetype");
+}
+
 $body-background: #e8f5e9; // Soft green
 $header-background: #1b5e20; // Dark green
 $header-color: #ffffff; // White
@@ -12,6 +17,9 @@ $table-third: #aed581; // Dark green
 $footer-background: $header-background; // Dark green
 $footer-color: #afc694; // White
 $footer-link: #d6e5d2; // Soft green
+$button-background: $table-first; // Medium green
+$button-hover: $table-second; // Light green
+$button-text-shadow: $table-header; // Medium green (or adjust as needed)
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -25,8 +33,20 @@ body {
   header {
     background-color: $header-background;
     color: $header-color;
-    padding: 10px 0;
     text-align: center;
+    flex-direction: row;
+    h1 {
+      font-size: 3rem;
+      padding: 0;
+      font-family: "zabka";
+      display: inline-block;
+    }
+    .nawias {
+      position: relative;
+      right: 1.75em;
+      top: 0.6em;
+      transform: rotate(0.25turn);
+    }
   }
   .content {
     display: flex;
@@ -84,6 +104,28 @@ body {
       background-color: $table-third;
     }
   }
+  button {
+    background-color: $button-background;
+    border-radius: 28px;
+    border: 1px solid $button-text-shadow;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px $button-text-shadow;
+  }
+  button:hover {
+    background-color: $button-hover;
+    border-color: $button-background;
+  }
+  button:active {
+    position: relative;
+    top: 1px;
+  }
+
   #footer {
     margin-top: auto;
     display: flex;
@@ -97,6 +139,7 @@ body {
     p {
       padding: 0em;
       margin: 0.2em;
+      margin-right: 0;
     }
     a {
       color: $footer-color;
