@@ -73,18 +73,47 @@ body .content {
 }
 body .content .body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 body .content .body .left {
-  min-width: 450px;
-  width: 450px;
   flex-grow: 1;
 }
 body .content .body .right {
-  min-width: 500px;
-  width: 500px;
+  display: flex;
+  flex-direction: row;
   flex-grow: 1;
+  align-content: center;
+  gap: 5px;
+}
+body .content .body .right div {
+  font-size: 2.5rem;
+  flex-grow: 1;
+  background-color: gray;
+  padding: 1rem;
+  border-radius: 20px;
+  border: solid 3px #1b5e20;
+  color: #0a280c;
+}
+body .content .body .right div * {
+  text-align: center;
+  margin: 0px;
+  padding: 0.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+body .content .body .right div h5 {
+  font-family: "zabka";
+}
+body .content .body .right div.first {
+  flex-grow: 5;
+  background-color: #ddff00;
+}
+body .content .body .right div.second {
+  background-color: #a1b591;
+}
+body .content .body .right div.third {
+  background-color: #7b9d54;
 }
 body table {
   align-self: center;
@@ -106,30 +135,30 @@ body table tr:nth-child(odd) {
   background-color: #f1f8e9;
 }
 body table #gold {
-  background-color: #388e3c;
+  background-color: #ddff00;
 }
 body table #silver {
-  background-color: #81c784;
+  background-color: #a1b591;
 }
 body table #bronze {
-  background-color: #aed581;
+  background-color: #7b9d54;
 }
 body button {
-  background-color: #388e3c;
+  background-color: #368e3b;
   border-radius: 28px;
   border: 1px solid #0d4b10;
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
   font-family: Arial;
-  font-size: 17px;
+  font-size: 1rem;
   padding: 16px 31px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #0d4b10;
 }
 body button:hover {
-  background-color: #81c784;
-  border-color: #388e3c;
+  background-color: #30d338;
+  border-color: #368e3b;
 }
 body button:active {
   position: relative;
@@ -162,7 +191,7 @@ body #footer a {
 body #footer a img {
   height: 1.3em;
   filter: invert(92%) sepia(6%) saturate(1497%) hue-rotate(39deg) brightness(85%) contrast(86%);
-}`, "",{"version":3,"sources":["webpack://./src/styles.scss"],"names":[],"mappings":"AAAA;EACE,oBAAA;EACA,+DAAA;AACF;AAmBA;EACE,8BAAA;EACA,SAAA;EACA,UAAA;EACA,yBArBgB;EAsBhB,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,qBAAA;EACA,iBAAA;AAjBF;AAkBE;EACE,yBA3BgB;EA4BhB,cA3BW;EA4BX,kBAAA;EACA,mBAAA;AAhBJ;AAiBI;EACE,eAAA;EACA,UAAA;EACA,oBAAA;EACA,qBAAA;AAfN;AAiBI;EACE,kBAAA;EACA,aAAA;EACA,UAAA;EACA,2BAAA;AAfN;AAkBE;EACE,aAAA;EACA,sBAAA;EACA,kBAAA;EACA,mBAAA;EACA,qBAAA;EACA,uBAAA;EACA,qBAAA;EACA,iBAAA;EACA,aAAA;EACA,yBApDiB;AAoCrB;AAiBI;EACE,aAAA;EACA,mBAAA;EACA,eAAA;AAfN;AAgBM;EACE,gBAAA;EACA,YAAA;EACA,YAAA;AAdR;AAgBM;EACE,gBAAA;EACA,YAAA;EACA,YAAA;AAdR;AAkBE;EACE,kBAAA;EACA,WAAA;EACA,iBAAA;EACA,cAAA;EACA,yBAAA;AAhBJ;AAiBI;;EAEE,aAAA;EACA,yBAAA;AAfN;AAiBI;EACE,yBAhFS;EAiFT,YAAA;AAfN;AAiBI;EACE,yBAlFM;AAmEZ;AAkBI;EACE,yBApFQ;AAoEd;AAkBI;EACE,yBAtFS;AAsEf;AAkBI;EACE,yBAxFQ;AAwEd;AAmBE;EACE,yBA9FU;EA+FV,mBAAA;EACA,yBAAA;EACA,qBAAA;EACA,eAAA;EACA,cAAA;EACA,kBAAA;EACA,eAAA;EACA,kBAAA;EACA,qBAAA;EACA,gCAAA;AAjBJ;AAmBE;EACE,yBA1GW;EA2GX,qBA5GU;AA2Fd;AAmBE;EACE,kBAAA;EACA,QAAA;AAjBJ;AAoBE;EACE,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,yBA/HgB;EAgIhB,uBAAA;EACA,cAtHW;EAuHX,cAAA;EACA,mBAAA;AAlBJ;AAmBI;EACE,YAAA;EACA,aAAA;EACA,eAAA;AAjBN;AAmBI;EACE,cA/HS;EAgIT,qBAAA;EACA,aAAA;EACA,kBAAA;EACA,qBAAA;EACA,mBAAA;AAjBN;AAkBM;EACE,aAAA;EACA,6FAAA;AAhBR","sourcesContent":["@font-face {\r\n  font-family: \"zabka\";\r\n  src: url(\"./FontsFree-Net-ergonomique-bold.ttf\") format(\"truetype\");\r\n}\r\n\r\n$body-background: #e8f5e9; // Soft green\r\n$header-background: #1b5e20; // Dark green\r\n$header-color: #ffffff; // White\r\n$content-background: #ffffff; // White\r\n$table-header: #0d4b10; // Medium green\r\n$table-border: #c8e6c9; // Light green\r\n$table-odd: #f1f8e9; // Very light green\r\n$table-even: #e8f5e9; // Slightly darker very light green\r\n$table-first: #388e3c; // Light green\r\n$table-second: #81c784; // Medium green\r\n$table-third: #aed581; // Dark green\r\n$footer-background: $header-background; // Dark green\r\n$footer-color: #afc694; // White\r\n$footer-link: #d6e5d2; // Soft green\r\n$button-background: $table-first; // Medium green\r\n$button-hover: $table-second; // Light green\r\n$button-text-shadow: $table-header; // Medium green (or adjust as needed)\r\nbody {\r\n  font-family: Arial, sans-serif;\r\n  margin: 0;\r\n  padding: 0;\r\n  background-color: $body-background;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-between;\r\n  align-content: center;\r\n  min-height: 100vh;\r\n  header {\r\n    background-color: $header-background;\r\n    color: $header-color;\r\n    text-align: center;\r\n    flex-direction: row;\r\n    h1 {\r\n      font-size: 3rem;\r\n      padding: 0;\r\n      font-family: \"zabka\";\r\n      display: inline-block;\r\n    }\r\n    .nawias {\r\n      position: relative;\r\n      right: 1.75em;\r\n      top: 0.6em;\r\n      transform: rotate(0.25turn);\r\n    }\r\n  }\r\n  .content {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-self: center;\r\n    align-items: center;\r\n    align-content: center;\r\n    justify-content: center;\r\n    justify-self: stretch;\r\n    max-width: 1200px;\r\n    padding: 20px;\r\n    background-color: $content-background;\r\n    .body {\r\n      display: flex;\r\n      flex-direction: row;\r\n      flex-wrap: wrap;\r\n      .left {\r\n        min-width: 450px;\r\n        width: 450px;\r\n        flex-grow: 1;\r\n      }\r\n      .right {\r\n        min-width: 500px;\r\n        width: 500px;\r\n        flex-grow: 1;\r\n      }\r\n    }\r\n  }\r\n  table {\r\n    align-self: center;\r\n    width: 100%;\r\n    max-width: 1200px;\r\n    margin: 20px 0;\r\n    border-collapse: collapse;\r\n    th,\r\n    td {\r\n      padding: 10px;\r\n      border: 1px solid $table-border;\r\n    }\r\n    th {\r\n      background-color: $table-header;\r\n      color: white;\r\n    }\r\n    tr:nth-child(odd) {\r\n      background-color: $table-odd;\r\n    }\r\n\r\n    #gold {\r\n      background-color: $table-first;\r\n    }\r\n    #silver {\r\n      background-color: $table-second;\r\n    }\r\n    #bronze {\r\n      background-color: $table-third;\r\n    }\r\n  }\r\n  button {\r\n    background-color: $button-background;\r\n    border-radius: 28px;\r\n    border: 1px solid $button-text-shadow;\r\n    display: inline-block;\r\n    cursor: pointer;\r\n    color: #ffffff;\r\n    font-family: Arial;\r\n    font-size: 17px;\r\n    padding: 16px 31px;\r\n    text-decoration: none;\r\n    text-shadow: 0px 1px 0px $button-text-shadow;\r\n  }\r\n  button:hover {\r\n    background-color: $button-hover;\r\n    border-color: $button-background;\r\n  }\r\n  button:active {\r\n    position: relative;\r\n    top: 1px;\r\n  }\r\n\r\n  #footer {\r\n    margin-top: auto;\r\n    display: flex;\r\n    flex-direction: row;\r\n    flex-wrap: nowrap;\r\n    background-color: $footer-background;\r\n    justify-content: center;\r\n    color: $footer-color;\r\n    padding: 0.5em;\r\n    align-items: center;\r\n    p {\r\n      padding: 0em;\r\n      margin: 0.2em;\r\n      margin-right: 0;\r\n    }\r\n    a {\r\n      color: $footer-color;\r\n      text-decoration: none;\r\n      display: flex;\r\n      text-align: center;\r\n      align-content: center;\r\n      align-items: center;\r\n      img {\r\n        height: 1.3em;\r\n        filter: invert(92%) sepia(6%) saturate(1497%) hue-rotate(39deg)\r\n          brightness(85%) contrast(86%);\r\n      }\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/styles.scss"],"names":[],"mappings":"AAAA;EACE,oBAAA;EACA,+DAAA;AACF;AAsBA;EACE,8BAAA;EACA,SAAA;EACA,UAAA;EACA,yBAxBgB;EAyBhB,aAAA;EACA,sBAAA;EACA,8BAAA;EACA,qBAAA;EACA,iBAAA;AApBF;AAqBE;EACE,yBA9BgB;EA+BhB,cA9BW;EA+BX,kBAAA;EACA,mBAAA;AAnBJ;AAoBI;EACE,eAAA;EACA,UAAA;EACA,oBAAA;EACA,qBAAA;AAlBN;AAoBI;EACE,kBAAA;EACA,aAAA;EACA,UAAA;EACA,2BAAA;AAlBN;AAqBE;EACE,aAAA;EACA,sBAAA;EACA,kBAAA;EACA,mBAAA;EACA,qBAAA;EACA,uBAAA;EACA,qBAAA;EACA,iBAAA;EACA,aAAA;EACA,yBAvDiB;AAoCrB;AAoBI;EACE,aAAA;EACA,sBAAA;EACA,eAAA;AAlBN;AAmBM;EACE,YAAA;AAjBR;AAmBM;EACE,aAAA;EACA,mBAAA;EACA,YAAA;EACA,qBAAA;EACA,QAAA;AAjBR;AAkBQ;EACE,iBAAA;EACA,YAAA;EACA,sBAAA;EACA,aAAA;EACA,mBAAA;EACA,yBAAA;EACA,cAAA;AAhBV;AAiBU;EACE,kBAAA;EACA,WAAA;EACA,eAAA;EACA,eAAA;EACA,gBAAA;AAfZ;AAiBU;EACE,oBAAA;AAfZ;AAoBQ;EACE,YAAA;EACA,yBAvFI;AAqEd;AAoBQ;EACE,yBAzFK;AAuEf;AAoBQ;EACE,yBA3FI;AAyEd;AAuBE;EACE,kBAAA;EACA,WAAA;EACA,iBAAA;EACA,cAAA;EACA,yBAAA;AArBJ;AAsBI;;EAEE,aAAA;EACA,yBAAA;AApBN;AAsBI;EACE,yBAlHS;EAmHT,YAAA;AApBN;AAsBI;EACE,yBApHM;AAgGZ;AAuBI;EACE,yBAtHQ;AAiGd;AAuBI;EACE,yBAxHS;AAmGf;AAuBI;EACE,yBA1HQ;AAqGd;AAwBE;EACE,yBA1HgB;EA2HhB,mBAAA;EACA,yBAAA;EACA,qBAAA;EACA,eAAA;EACA,cAAA;EACA,kBAAA;EACA,eAAA;EACA,kBAAA;EACA,qBAAA;EACA,gCAAA;AAtBJ;AAwBE;EACE,yBAtIW;EAuIX,qBAxIgB;AAkHpB;AAwBE;EACE,kBAAA;EACA,QAAA;AAtBJ;AAyBE;EACE,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,yBAjKgB;EAkKhB,uBAAA;EACA,cAxJW;EAyJX,cAAA;EACA,mBAAA;AAvBJ;AAwBI;EACE,YAAA;EACA,aAAA;EACA,eAAA;AAtBN;AAwBI;EACE,cAjKS;EAkKT,qBAAA;EACA,aAAA;EACA,kBAAA;EACA,qBAAA;EACA,mBAAA;AAtBN;AAuBM;EACE,aAAA;EACA,6FAAA;AArBR","sourcesContent":["@font-face {\r\n  font-family: \"zabka\";\r\n  src: url(\"./FontsFree-Net-ergonomique-bold.ttf\") format(\"truetype\");\r\n}\r\n\r\n$body-background: #e8f5e9;\r\n$header-background: #1b5e20;\r\n$header-color: #ffffff;\r\n$content-background: #ffffff;\r\n$table-header: #0d4b10;\r\n$table-border: #c8e6c9;\r\n$table-odd: #f1f8e9;\r\n$table-even: #e8f5e9;\r\n$table-first: #ddff00;\r\n$table-second: #a1b591;\r\n$table-third: #7b9d54;\r\n$footer-background: $header-background;\r\n$footer-color: #afc694;\r\n$footer-link: #d6e5d2;\r\n$button-background: #368e3b;\r\n$button-hover: #30d338;\r\n$button-text-shadow: #0d4b10;\r\n$podium-first: $table-first;\r\n$podium-second: $table-second;\r\n$podium-third: $table-third;\r\nbody {\r\n  font-family: Arial, sans-serif;\r\n  margin: 0;\r\n  padding: 0;\r\n  background-color: $body-background;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: space-between;\r\n  align-content: center;\r\n  min-height: 100vh;\r\n  header {\r\n    background-color: $header-background;\r\n    color: $header-color;\r\n    text-align: center;\r\n    flex-direction: row;\r\n    h1 {\r\n      font-size: 3rem;\r\n      padding: 0;\r\n      font-family: \"zabka\";\r\n      display: inline-block;\r\n    }\r\n    .nawias {\r\n      position: relative;\r\n      right: 1.75em;\r\n      top: 0.6em;\r\n      transform: rotate(0.25turn);\r\n    }\r\n  }\r\n  .content {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-self: center;\r\n    align-items: center;\r\n    align-content: center;\r\n    justify-content: center;\r\n    justify-self: stretch;\r\n    max-width: 1200px;\r\n    padding: 20px;\r\n    background-color: $content-background;\r\n    .body {\r\n      display: flex;\r\n      flex-direction: column;\r\n      flex-wrap: wrap;\r\n      .left {\r\n        flex-grow: 1;\r\n      }\r\n      .right {\r\n        display: flex;\r\n        flex-direction: row;\r\n        flex-grow: 1;\r\n        align-content: center;\r\n        gap: 5px;\r\n        div {\r\n          font-size: 2.5rem;\r\n          flex-grow: 1;\r\n          background-color: gray;\r\n          padding: 1rem;\r\n          border-radius: 20px;\r\n          border: solid 3px $header-background;\r\n          color: #0a280c;\r\n          * {\r\n            text-align: center;\r\n            margin: 0px;\r\n            padding: 0.5rem;\r\n            padding-left: 0;\r\n            padding-right: 0;\r\n          }\r\n          h5 {\r\n            font-family: \"zabka\";\r\n          }\r\n          p {\r\n          }\r\n        }\r\n        div.first {\r\n          flex-grow: 5;\r\n          background-color: $podium-first;\r\n        }\r\n        div.second {\r\n          background-color: $podium-second;\r\n        }\r\n        div.third {\r\n          background-color: $podium-third;\r\n        }\r\n      }\r\n    }\r\n  }\r\n  table {\r\n    align-self: center;\r\n    width: 100%;\r\n    max-width: 1200px;\r\n    margin: 20px 0;\r\n    border-collapse: collapse;\r\n    th,\r\n    td {\r\n      padding: 10px;\r\n      border: 1px solid $table-border;\r\n    }\r\n    th {\r\n      background-color: $table-header;\r\n      color: white;\r\n    }\r\n    tr:nth-child(odd) {\r\n      background-color: $table-odd;\r\n    }\r\n\r\n    #gold {\r\n      background-color: $table-first;\r\n    }\r\n    #silver {\r\n      background-color: $table-second;\r\n    }\r\n    #bronze {\r\n      background-color: $table-third;\r\n    }\r\n  }\r\n  button {\r\n    background-color: $button-background;\r\n    border-radius: 28px;\r\n    border: 1px solid $button-text-shadow;\r\n    display: inline-block;\r\n    cursor: pointer;\r\n    color: #ffffff;\r\n    font-family: Arial;\r\n    font-size: 1rem;\r\n    padding: 16px 31px;\r\n    text-decoration: none;\r\n    text-shadow: 0px 1px 0px $button-text-shadow;\r\n  }\r\n  button:hover {\r\n    background-color: $button-hover;\r\n    border-color: $button-background;\r\n  }\r\n  button:active {\r\n    position: relative;\r\n    top: 1px;\r\n  }\r\n\r\n  #footer {\r\n    margin-top: auto;\r\n    display: flex;\r\n    flex-direction: row;\r\n    flex-wrap: nowrap;\r\n    background-color: $footer-background;\r\n    justify-content: center;\r\n    color: $footer-color;\r\n    padding: 0.5em;\r\n    align-items: center;\r\n    p {\r\n      padding: 0em;\r\n      margin: 0.2em;\r\n      margin-right: 0;\r\n    }\r\n    a {\r\n      color: $footer-color;\r\n      text-decoration: none;\r\n      display: flex;\r\n      text-align: center;\r\n      align-content: center;\r\n      align-items: center;\r\n      img {\r\n        height: 1.3em;\r\n        filter: invert(92%) sepia(6%) saturate(1497%) hue-rotate(39deg)\r\n          brightness(85%) contrast(86%);\r\n      }\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
