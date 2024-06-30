@@ -73,6 +73,7 @@ body {
         display: flex;
         flex-direction: row;
         flex-grow: 1;
+        flex-wrap: wrap;
         align-content: center;
         gap: 5px;
         div {
@@ -96,8 +97,18 @@ body {
           p {
           }
         }
+        .second-third-container {
+          background-color: white;
+          border: none;
+          padding: 0;
+          gap: 5px;
+          display: flex;
+          flex-direction: row;
+        }
         div.first {
-          flex-grow: 5;
+          flex-grow: 1;
+          flex-shrink: 1;
+          width: 400px;
           background-color: $podium-first;
         }
         div.second {
@@ -188,5 +199,24 @@ body {
           brightness(85%) contrast(86%);
       }
     }
+  }
+}
+/* Media Queries */
+
+@media (max-width: 600px) {
+  table {
+    width: 100%;
+    th,
+    td {
+      font-size: 0.7rem;
+      padding: 5px;
+    }
+  }
+  .content {
+    padding: 5px;
+  }
+
+  header h1 {
+    font-size: 2rem;
   }
 }
