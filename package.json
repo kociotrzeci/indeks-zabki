@@ -9,7 +9,9 @@
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
-    "serve": "webpack serve"
+    "serve": "webpack serve",
+    "publish": "git subtree push --prefix dist origin gh-pages",
+    "republish": "git push gh-pages"
   },
   "author": "",
   "license": "ISC",
