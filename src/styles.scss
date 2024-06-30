@@ -3,23 +3,26 @@
   src: url("./FontsFree-Net-ergonomique-bold.ttf") format("truetype");
 }
 
-$body-background: #e8f5e9; // Soft green
-$header-background: #1b5e20; // Dark green
-$header-color: #ffffff; // White
-$content-background: #ffffff; // White
-$table-header: #0d4b10; // Medium green
-$table-border: #c8e6c9; // Light green
-$table-odd: #f1f8e9; // Very light green
-$table-even: #e8f5e9; // Slightly darker very light green
-$table-first: #388e3c; // Light green
-$table-second: #81c784; // Medium green
-$table-third: #aed581; // Dark green
-$footer-background: $header-background; // Dark green
-$footer-color: #afc694; // White
-$footer-link: #d6e5d2; // Soft green
-$button-background: $table-first; // Medium green
-$button-hover: $table-second; // Light green
-$button-text-shadow: $table-header; // Medium green (or adjust as needed)
+$body-background: #e8f5e9;
+$header-background: #1b5e20;
+$header-color: #ffffff;
+$content-background: #ffffff;
+$table-header: #0d4b10;
+$table-border: #c8e6c9;
+$table-odd: #f1f8e9;
+$table-even: #e8f5e9;
+$table-first: #ddff00;
+$table-second: #a1b591;
+$table-third: #7b9d54;
+$footer-background: $header-background;
+$footer-color: #afc694;
+$footer-link: #d6e5d2;
+$button-background: #368e3b;
+$button-hover: #30d338;
+$button-text-shadow: #0d4b10;
+$podium-first: $table-first;
+$podium-second: $table-second;
+$podium-third: $table-third;
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -61,17 +64,48 @@ body {
     background-color: $content-background;
     .body {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: wrap;
       .left {
-        min-width: 450px;
-        width: 450px;
         flex-grow: 1;
       }
       .right {
-        min-width: 500px;
-        width: 500px;
+        display: flex;
+        flex-direction: row;
         flex-grow: 1;
+        align-content: center;
+        gap: 5px;
+        div {
+          font-size: 2.5rem;
+          flex-grow: 1;
+          background-color: gray;
+          padding: 1rem;
+          border-radius: 20px;
+          border: solid 3px $header-background;
+          color: #0a280c;
+          * {
+            text-align: center;
+            margin: 0px;
+            padding: 0.5rem;
+            padding-left: 0;
+            padding-right: 0;
+          }
+          h5 {
+            font-family: "zabka";
+          }
+          p {
+          }
+        }
+        div.first {
+          flex-grow: 5;
+          background-color: $podium-first;
+        }
+        div.second {
+          background-color: $podium-second;
+        }
+        div.third {
+          background-color: $podium-third;
+        }
       }
     }
   }
@@ -112,7 +146,7 @@ body {
     cursor: pointer;
     color: #ffffff;
     font-family: Arial;
-    font-size: 17px;
+    font-size: 1rem;
     padding: 16px 31px;
     text-decoration: none;
     text-shadow: 0px 1px 0px $button-text-shadow;
