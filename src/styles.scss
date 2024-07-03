@@ -108,7 +108,7 @@ body {
         div.first {
           flex-grow: 1;
           flex-shrink: 1;
-          width: 400px;
+          width: 300px;
           background-color: $podium-first;
         }
         div.second {
@@ -218,5 +218,74 @@ body {
 
   header h1 {
     font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    .content {
+      .body {
+        .right {
+          * {
+            font-size: 1.5rem;
+          }
+          div.first {
+            width: 240px;
+          }
+        }
+      }
+    }
+
+    table {
+      width: 100%;
+      th,
+      td {
+        font-size: 0.7rem;
+        padding: 5px;
+        padding-left: 1px;
+        padding-right: 1px;
+      }
+    }
+  }
+  .content {
+    padding: 7px;
+  }
+
+  body header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    .content {
+      .body {
+        .right {
+          * {
+            font-size: 1.5rem;
+          }
+          div.first {
+            width: 240px;
+          }
+        }
+      }
+    }
+
+    table {
+      width: 100%;
+      th,
+      td {
+        font-size: 0.6rem;
+        padding: 5px;
+        padding-left: 1px;
+        padding-right: 1px;
+      }
+    }
+  }
+  .content {
+    padding: 7px;
+  }
+
+  body header h1 {
+    font-size: 2.5rem;
   }
 }
